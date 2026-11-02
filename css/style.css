@@ -522,10 +522,10 @@ a:active {
   padding-block: var(--space-lg);
   color: var(--color-white);
   background-color: var(--color-primary-dark);
-  background-image: url("../images/hero-800.jpg");
+  background-image: url("../images/rescue-puppy-hero-800.jpg");
   background-image: image-set(
-    url("../images/hero-800.jpg") 1x,
-    url("../images/hero-1600.jpg") 2x
+    url("../images/rescue-puppy-hero-800.jpg") 1x,
+    url("../images/rescue-puppy-hero-1600.jpg") 2x
   );
   background-size: cover;
   background-position: center 30%;
@@ -1447,7 +1447,7 @@ select.form-control {
 
   .hero-section {
     min-height: 85vh;
-    background-image: url("../images/hero-1600.jpg");
+    background-image: url("../images/rescue-puppy-hero-1600.jpg");
   }
 
   .split-section {
