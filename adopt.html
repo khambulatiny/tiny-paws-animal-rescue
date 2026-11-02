@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the dogs and cats available for adoption at Tiny Paws Animal Rescue and send an adoption enquiry.">
+  <title>Tiny Paws Animal Rescue | Adopt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">
+        <span class="logo-icon" aria-hidden="true">🐾</span>
+        <span>Tiny <span class="logo-accent">Paws</span></span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="adopt.html" class="nav-link" aria-current="page">Adopt</a></li>
+          <li><a href="get-involved.html" class="nav-link">Get Involved</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+          <li class="nav-cta"><a href="get-involved.html#donate" class="btn btn-primary">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ===== Page banner ===== -->
+    <section class="page-banner" aria-labelledby="page-title">
+      <div class="container">
+        <h5>Adopt</h5>
+        <h1 id="page-title">Animals available for adoption</h1>
+        <p>Every animal has been health-checked, vaccinated and is waiting for someone just like you.</p>
+      </div>
+    </section>
+
+    <!-- ===== Animal profiles ===== -->
+    <section class="section" aria-labelledby="animals-title">
+      <div class="container">
+        <h2 id="animals-title" class="sr-only">Our animals</h2>
+        <div class="card-grid">
+          <article class="animal-card">
+            <picture class="animal-image">
+              <source type="image/webp" srcset="images/beagle-max-400.webp 400w, images/beagle-max-800.webp 800w" sizes="(min-width: 1024px) 380px, (min-width: 769px) 45vw, 100vw">
+              <img src="images/beagle-max-400.jpg" srcset="images/beagle-max-400.jpg 400w, images/beagle-max-800.jpg 800w" sizes="(min-width: 1024px) 380px, (min-width: 769px) 45vw, 100vw" alt="Max, a smiling beagle with a black collar" width="400" height="300" loading="lazy">
+            </picture>
+            <div class="animal-body">
+              <h3>Max</h3>
+              <ul class="tag-list" aria-label="Details">
+                <li class="tag tag-blue">Dog</li>
+                <li class="tag">3 years</li>
+                <li class="tag">Male</li>
+              </ul>
+              <p>A happy beagle who loves walks, belly rubs and playing fetch. Great with children.</p>
+              <a href="#adoption-form" class="btn btn-primary">Enquire about Max</a>
+            </div>
+          </article>
+
+          <article class="animal-card">
+            <picture class="animal-image">
+              <source type="image/webp" srcset="images/cat-luna-400.webp 400w, images/cat-luna-800.webp 800w" sizes="(min-width: 1024px) 380px, (min-width: 769px) 45vw, 100vw">
+              <img src="images/cat-luna-400.jpg" srcset="images/cat-luna-400.jpg 400w, images/cat-luna-800.jpg 800w" sizes="(min-width: 1024px) 380px, (min-width: 769px) 45vw, 100vw" alt="Luna, a black and white cat peeking out of a box" width="400" height="300" loading="lazy">
+            </picture>
+            <div class="animal-body">
+              <h3>Luna</h3>
+              <ul class="tag-list" aria-label="Details">
+                <li class="tag tag-blue">Cat</li>
+                <li class="tag">2 years</li>
+                <li class="tag">Female</li>
+              </ul>
+              <p>A curious and gentle cat who enjoys quiet afternoons and exploring cardboard boxes.</p>
+              <a href="#adoption-form" class="btn btn-primary">Enquire about Luna</a>
+            </div>
+          </article>
+
+          <article class="animal-card">
+            <picture class="animal-image">
+              <source type="image/webp" srcset="images/corgi-biscuit-400.webp 400w, images/corgi-biscuit-800.webp 800w" sizes="(min-width: 1024px) 380px, (min-width: 769px) 45vw, 100vw">
+              <img src="images/corgi-biscuit-400.jpg" srcset="images/corgi-biscuit-400.jpg 400w, images/corgi-biscuit-800.jpg 800w" sizes="(min-width: 1024px) 380px, (min-width: 769px) 45vw, 100vw" alt="Biscuit, a corgi-mix puppy with big ears" width="400" height="300" loading="lazy">
+            </picture>
+            <div class="animal-body">
+              <h3>Biscuit</h3>
+              <ul class="tag-list" aria-label="Details">
+                <li class="tag tag-blue">Dog</li>
+                <li class="tag">6 months</li>
+                <li class="tag">Male</li>
+              </ul>
+              <p>A playful puppy full of energy and cuddles. Looking for an active family.</p>
+              <a href="#adoption-form" class="btn btn-primary">Enquire about Biscuit</a>
+            </div>
+          </article>
+
+          <article class="animal-card">
+            <picture class="animal-image">
+              <source type="image/webp" srcset="images/collie-bella-400.webp 400w, images/collie-bella-800.webp 800w" sizes="(min-width: 1024px) 380px, (min-width: 769px) 45vw, 100vw">
+              <img src="images/collie-bella-400.jpg" srcset="images/collie-bella-400.jpg 400w, images/collie-bella-800.jpg 800w" sizes="(min-width: 1024px) 380px, (min-width: 769px) 45vw, 100vw" alt="Bella, a brown and white collie mix on a beach" width="400" height="300" loading="lazy">
+            </picture>
+            <div class="animal-body">
+              <h3>Bella</h3>
+              <ul class="tag-list" aria-label="Details">
+                <li class="tag tag-blue">Dog</li>
+                <li class="tag">4 years</li>
+                <li class="tag">Female</li>
+              </ul>
+              <p>Loyal, clever and loves the outdoors. Would suit a home with a garden.</p>
+              <a href="#adoption-form" class="btn btn-primary">Enquire about Bella</a>
+            </div>
+          </article>
+
+          <article class="animal-card">
+            <picture class="animal-image">
+              <source type="image/webp" srcset="images/tabby-tiger-400.webp 400w, images/tabby-tiger-800.webp 800w" sizes="(min-width: 1024px) 380px, (min-width: 769px) 45vw, 100vw">
+              <img src="images/tabby-tiger-400.jpg" srcset="images/tabby-tiger-400.jpg 400w, images/tabby-tiger-800.jpg 800w" sizes="(min-width: 1024px) 380px, (min-width: 769px) 45vw, 100vw" alt="Tiger, a tabby cat with bright green eyes" width="400" height="300" loading="lazy">
+            </picture>
+            <div class="animal-body">
+              <h3>Tiger</h3>
+              <ul class="tag-list" aria-label="Details">
+                <li class="tag tag-blue">Cat</li>
+                <li class="tag">5 years</li>
+                <li class="tag">Male</li>
+              </ul>
+              <p>A calm, affectionate cat who loves sunny windowsills and chin scratches.</p>
+              <a href="#adoption-form" class="btn btn-primary">Enquire about Tiger</a>
+            </div>
+          </article>
+
+          <article class="animal-card">
+            <picture class="animal-image">
+              <source type="image/webp" srcset="images/kitten-pip-400.webp 400w, images/kitten-pip-800.webp 800w" sizes="(min-width: 1024px) 380px, (min-width: 769px) 45vw, 100vw">
+              <img src="images/kitten-pip-400.jpg" srcset="images/kitten-pip-400.jpg 400w, images/kitten-pip-800.jpg 800w" sizes="(min-width: 1024px) 380px, (min-width: 769px) 45vw, 100vw" alt="Pip, a fluffy kitten reaching up with one paw" width="400" height="300" loading="lazy">
+            </picture>
+            <div class="animal-body">
+              <h3>Pip</h3>
+              <ul class="tag-list" aria-label="Details">
+                <li class="tag tag-blue">Kitten</li>
+                <li class="tag">10 weeks</li>
+                <li class="tag">Female</li>
+              </ul>
+              <p>A tiny ball of fluff who loves chasing toys. Litter-trained and ready to go.</p>
+              <a href="#adoption-form" class="btn btn-primary">Enquire about Pip</a>
+            </div>
+          </article>
+
+          <article class="animal-card">
+            <picture class="animal-image">
+              <source type="image/webp" srcset="images/bulldog-bruno-400.webp 400w, images/bulldog-bruno-800.webp 800w" sizes="(min-width: 1024px) 380px, (min-width: 769px) 45vw, 100vw">
+              <img src="images/bulldog-bruno-400.jpg" srcset="images/bulldog-bruno-400.jpg 400w, images/bulldog-bruno-800.jpg 800w" sizes="(min-width: 1024px) 380px, (min-width: 769px) 45vw, 100vw" alt="Bruno, a French bulldog wearing a yellow hoodie" width="400" height="300" loading="lazy">
+            </picture>
+            <div class="animal-body">
+              <h3>Bruno</h3>
+              <ul class="tag-list" aria-label="Details">
+                <li class="tag tag-blue">Dog</li>
+                <li class="tag">6 years</li>
+                <li class="tag">Male</li>
+              </ul>
+              <p>A laid-back gentleman who enjoys short walks and long naps on the couch.</p>
+              <a href="#adoption-form" class="btn btn-primary">Enquire about Bruno</a>
+            </div>
+          </article>
+
+          <article class="animal-card">
+            <picture class="animal-image">
+              <source type="image/webp" srcset="images/cat-mia-400.webp 400w, images/cat-mia-800.webp 800w" sizes="(min-width: 1024px) 380px, (min-width: 769px) 45vw, 100vw">
+              <img src="images/cat-mia-400.jpg" srcset="images/cat-mia-400.jpg 400w, images/cat-mia-800.jpg 800w" sizes="(min-width: 1024px) 380px, (min-width: 769px) 45vw, 100vw" alt="Mia, a tabby cat sitting on white stairs" width="400" height="300" loading="lazy">
+            </picture>
+            <div class="animal-body">
+              <h3>Mia</h3>
+              <ul class="tag-list" aria-label="Details">
+                <li class="tag tag-blue">Cat</li>
+                <li class="tag">1 year</li>
+                <li class="tag">Female</li>
+              </ul>
+              <p>Shy at first but very loving once she trusts you. Best in a quiet home.</p>
+              <a href="#adoption-form" class="btn btn-primary">Enquire about Mia</a>
+            </div>
+          </article>
+
+          <article class="animal-card">
+            <picture class="animal-image">
+              <source type="image/webp" srcset="images/cat-ginger-400.webp 400w, images/cat-ginger-800.webp 800w" sizes="(min-width: 1024px) 380px, (min-width: 769px) 45vw, 100vw">
+              <img src="images/cat-ginger-400.jpg" srcset="images/cat-ginger-400.jpg 400w, images/cat-ginger-800.jpg 800w" sizes="(min-width: 1024px) 380px, (min-width: 769px) 45vw, 100vw" alt="Ginger, an orange cat lying on a table" width="400" height="300" loading="lazy">
+            </picture>
+            <div class="animal-body">
+              <h3>Ginger</h3>
+              <ul class="tag-list" aria-label="Details">
+                <li class="tag tag-blue">Cat</li>
+                <li class="tag">3 years</li>
+                <li class="tag">Male</li>
+              </ul>
+              <p>Friendly and chatty, gets along with other cats and gentle dogs.</p>
+              <a href="#adoption-form" class="btn btn-primary">Enquire about Ginger</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Adoption process ===== -->
+    <section class="section section-alt" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-header">
+          <h5>How it works</h5>
+          <h2 id="process-title">The adoption process</h2>
+        </div>
+        <div class="card-grid card-grid-sm">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">1</div>
+            <h3>Enquire</h3>
+            <p>Fill in the adoption enquiry form below.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">2</div>
+            <h3>Meet</h3>
+            <p>Visit the rescue and spend time with the animal.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">3</div>
+            <h3>Home check</h3>
+            <p>A volunteer makes sure your home is safe and ready.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">4</div>
+            <h3>Welcome home</h3>
+            <p>Sign the adoption agreement and take your new friend home.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Adoption enquiry form ===== -->
+    <section id="adoption-form" class="section" aria-labelledby="form-title">
+      <div class="container">
+        <form class="form-card" action="#" method="post">
+          <h2 id="form-title">Adoption enquiry form</h2>
+          <p class="form-intro">Tell us about yourself and the pet you would like to adopt. We will get back to you within 2 working days. Fields marked <span class="required">*</span> are required.</p>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="adopt-name" class="form-label">Full name <span class="required">*</span></label>
+              <input type="text" id="adopt-name" name="name" class="form-control" autocomplete="name" placeholder="e.g. Thandi Nkosi" required>
+            </div>
+            <div class="form-group">
+              <label for="adopt-email" class="form-label">Email address <span class="required">*</span></label>
+              <input type="email" id="adopt-email" name="email" class="form-control" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="adopt-phone" class="form-label">Phone number <span class="required">*</span></label>
+              <input type="tel" id="adopt-phone" name="phone" class="form-control" autocomplete="tel" placeholder="e.g. 082 123 4567" required>
+            </div>
+            <div class="form-group">
+              <label for="adopt-animal" class="form-label">Animal you are interested in</label>
+              <select id="adopt-animal" name="animal" class="form-control">
+                <option value="">Not sure yet</option>
+                <option>Max (Dog)</option>
+                <option>Luna (Cat)</option>
+                <option>Biscuit (Dog)</option>
+                <option>Bella (Dog)</option>
+                <option>Tiger (Cat)</option>
+                <option>Pip (Kitten)</option>
+                <option>Bruno (Dog)</option>
+                <option>Mia (Cat)</option>
+                <option>Ginger (Cat)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="adopt-type" class="form-label">Type of pet <span class="required">*</span></label>
+              <select id="adopt-type" name="pet-type" class="form-control" required>
+                <option value="">Please choose</option>
+                <option>Dog</option>
+                <option>Cat</option>
+                <option>Either</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="adopt-home" class="form-label">Type of home</label>
+              <select id="adopt-home" name="home-type" class="form-control">
+                <option value="">Please choose</option>
+                <option>House with a garden</option>
+                <option>House without a garden</option>
+                <option>Flat / apartment</option>
+              </select>
+            </div>
+            <div class="form-group form-group-full">
+              <label for="adopt-message" class="form-label">Tell us about your household and other pets</label>
+              <textarea id="adopt-message" name="message" class="form-control" placeholder="Who lives with you? Do you have other pets? Any experience with dogs or cats?"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send enquiry</button>
+          <p class="form-note">We will never share your details with anyone else.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">
+            <span class="logo-icon" aria-hidden="true">🐾</span>
+            <span>Tiny <span class="logo-accent">Paws</span></span>
+          </a>
+          <p>Rescuing, caring for and rehoming abandoned, abused and neglected animals in our community.</p>
+        </div>
+        <div>
+          <h2>Quick Links</h2>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="adopt.html">Adopt</a></li>
+            <li><a href="about.html#gallery">Gallery</a></li>
+            <li><a href="contact.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Get Involved</h2>
+          <ul class="footer-links">
+            <li><a href="get-involved.html#donate">Donate</a></li>
+            <li><a href="get-involved.html#volunteer">Volunteer</a></li>
+            <li><a href="adopt.html#adoption-form">Adoption Enquiry</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Visit Us</h2>
+          <address>
+            24 Market Street<br>
+            Eendraught<br>
+            <a href="mailto:info@tinypawsrescue.co.za">info@tinypawsrescue.co.za</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Tiny Paws Animal Rescue. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

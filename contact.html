@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Tiny Paws Animal Rescue at 24 Market Street, Eendraught. Opening hours, contact form and FAQ.">
+  <title>Tiny Paws Animal Rescue | Contact Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">
+        <span class="logo-icon" aria-hidden="true">🐾</span>
+        <span>Tiny <span class="logo-accent">Paws</span></span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="adopt.html" class="nav-link">Adopt</a></li>
+          <li><a href="get-involved.html" class="nav-link">Get Involved</a></li>
+          <li><a href="contact.html" class="nav-link" aria-current="page">Contact Us</a></li>
+          <li class="nav-cta"><a href="get-involved.html#donate" class="btn btn-primary">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ===== Page banner ===== -->
+    <section class="page-banner" aria-labelledby="page-title">
+      <div class="container">
+        <h5>Contact Us</h5>
+        <h1 id="page-title">We would love to hear from you</h1>
+        <p>Questions about adoption, volunteering or donations? Get in touch or visit us during opening hours.</p>
+      </div>
+    </section>
+
+    <!-- ===== Contact details + form ===== -->
+    <section class="section" aria-label="Contact details and form">
+      <div class="container contact-wrapper">
+        <div class="contact-info">
+          <h2>Get in touch</h2>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon" aria-hidden="true">📍</span>
+              <span><strong>Address</strong>24 Market Street, Eendraught</span>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">✉️</span>
+              <span><strong>Email</strong><a href="mailto:info@tinypawsrescue.co.za">info@tinypawsrescue.co.za</a></span>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">📞</span>
+              <span><strong>Phone</strong>[Phone number]</span>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">📱</span>
+              <span><strong>Social media</strong>Follow us for updates on new rescues</span>
+            </li>
+          </ul>
+
+          <table class="hours-table">
+            <caption>Opening hours</caption>
+            <tbody>
+              <tr><th scope="row">Monday – Friday</th><td>09:00 – 17:00</td></tr>
+              <tr><th scope="row">Saturday</th><td>09:00 – 14:00</td></tr>
+              <tr><th scope="row">Sunday &amp; public holidays</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <form class="form-card" action="#" method="post" aria-labelledby="contact-form-title">
+          <h2 id="contact-form-title">Send us a message</h2>
+          <p class="form-intro">Fields marked <span class="required">*</span> are required.</p>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Name <span class="required">*</span></label>
+              <input type="text" id="contact-name" name="name" class="form-control" autocomplete="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email <span class="required">*</span></label>
+              <input type="email" id="contact-email" name="email" class="form-control" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group form-group-full">
+              <label for="contact-subject" class="form-label">Subject</label>
+              <select id="contact-subject" name="subject" class="form-control">
+                <option>General question</option>
+                <option>Adoption</option>
+                <option>Volunteering</option>
+                <option>Donations</option>
+                <option>Report an animal in need</option>
+              </select>
+            </div>
+            <div class="form-group form-group-full">
+              <label for="contact-message" class="form-label">Message <span class="required">*</span></label>
+              <textarea id="contact-message" name="message" class="form-control" placeholder="How can we help?" required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq" class="section section-alt" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <h5>FAQ</h5>
+          <h2 id="faq-title">Frequently asked questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <h3 class="faq-category">Adoption</h3>
+          <details class="faq-item">
+            <summary class="faq-question">How do I adopt an animal?</summary>
+            <div class="faq-answer"><p>Complete the adoption enquiry form on our Adopt page. We will contact you to arrange a visit, do a quick home check and then finalise the adoption.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Is there an adoption fee?</summary>
+            <div class="faq-answer"><p>Yes, a small fee helps cover vaccinations, sterilisation and vet checks. Please contact us for the current fee.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Can I adopt if I rent my home?</summary>
+            <div class="faq-answer"><p>Yes, as long as your landlord allows pets. We may ask for written permission.</p></div>
+          </details>
+
+          <h3 class="faq-category">Volunteering</h3>
+          <details class="faq-item">
+            <summary class="faq-question">Do I need experience to volunteer?</summary>
+            <div class="faq-answer"><p>No. We will show you everything you need to know. All you need is a love for animals and some free time.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">How old do I need to be?</summary>
+            <div class="faq-answer"><p>Volunteers must be 16 or older. Younger helpers are welcome when accompanied by a parent or guardian.</p></div>
+          </details>
+
+          <h3 class="faq-category">Donations</h3>
+          <details class="faq-item">
+            <summary class="faq-question">What are donations used for?</summary>
+            <div class="faq-answer"><p>Donations pay for food, shelter, vaccinations, sterilisation and medical care for rescued animals.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Can I donate food or supplies instead of money?</summary>
+            <div class="faq-answer"><p>Absolutely. Pet food, blankets, bowls, toys and leashes can be dropped off at 24 Market Street during opening hours.</p></div>
+          </details>
+
+          <h3 class="faq-category">Caring for rescued animals</h3>
+          <details class="faq-item">
+            <summary class="faq-question">How long does it take a rescued pet to settle in?</summary>
+            <div class="faq-answer"><p>Every animal is different. Most need a few days to a few weeks. Give them a quiet space, a routine and lots of patience.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Can I contact you after adopting?</summary>
+            <div class="faq-answer"><p>Yes! We are always happy to give advice after adoption, and we love receiving photo updates.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">
+            <span class="logo-icon" aria-hidden="true">🐾</span>
+            <span>Tiny <span class="logo-accent">Paws</span></span>
+          </a>
+          <p>Rescuing, caring for and rehoming abandoned, abused and neglected animals in our community.</p>
+        </div>
+        <div>
+          <h2>Quick Links</h2>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="adopt.html">Adopt</a></li>
+            <li><a href="about.html#gallery">Gallery</a></li>
+            <li><a href="contact.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Get Involved</h2>
+          <ul class="footer-links">
+            <li><a href="get-involved.html#donate">Donate</a></li>
+            <li><a href="get-involved.html#volunteer">Volunteer</a></li>
+            <li><a href="adopt.html#adoption-form">Adoption Enquiry</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Visit Us</h2>
+          <address>
+            24 Market Street<br>
+            Eendraught<br>
+            <a href="mailto:info@tinypawsrescue.co.za">info@tinypawsrescue.co.za</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Tiny Paws Animal Rescue. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
