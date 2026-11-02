@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -118,6 +119,19 @@
       </div>
     </section>
 
+    <!-- ===== Map ===== -->
+    <section id="find-us" class="section" aria-labelledby="map-title">
+      <div class="container">
+        <div class="section-header">
+          <h5>Find us</h5>
+          <h2 id="map-title">Visit the rescue</h2>
+          <p>24 Market Street, Eendraught. Click the paw for directions, drag to move and use + / − to zoom.</p>
+        </div>
+        <div id="rescue-map" class="map-frame" data-lat="-26.2041" data-lng="28.0473" role="region" aria-label="Interactive map showing Tiny Paws Animal Rescue at 24 Market Street, Eendraught"></div>
+        <p class="map-note"><a href="https://www.openstreetmap.org/?mlat=-26.2041&amp;mlon=28.0473#map=17/-26.2041/28.0473" target="_blank" rel="noopener">View larger map on OpenStreetMap ↗</a></p>
+      </div>
+    </section>
+
     <!-- ===== FAQ ===== -->
     <section id="faq" class="section section-alt" aria-labelledby="faq-title">
       <div class="container">
@@ -217,6 +231,8 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+  <script src="js/map.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>
