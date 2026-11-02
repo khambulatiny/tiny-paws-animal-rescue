@@ -111,14 +111,14 @@
     <!-- ===== Adoption enquiry form ===== -->
     <section id="adoption-form" class="section" aria-labelledby="form-title">
       <div class="container">
-        <form class="form-card" action="#" method="post">
+        <form id="enquiry-form" class="form-card" action="#" method="post" aria-labelledby="form-title" novalidate>
           <h2 id="form-title">Adoption enquiry form</h2>
-          <p class="form-intro">Tell us about yourself and the pet you would like to adopt. We will get back to you within 2 working days. Fields marked <span class="required">*</span> are required.</p>
+          <p class="form-intro">Tell us about yourself and the pet you would like to adopt. You will get an instant estimate of the adoption cost and visit availability. Fields marked <span class="required">*</span> are required.</p>
 
           <div class="form-grid">
             <div class="form-group">
               <label for="adopt-name" class="form-label">Full name <span class="required">*</span></label>
-              <input type="text" id="adopt-name" name="name" class="form-control" autocomplete="name" placeholder="e.g. Thandi Nkosi" required>
+              <input type="text" id="adopt-name" name="name" class="form-control" autocomplete="name" placeholder="e.g. Thandi Nkosi" data-rule="name" required>
             </div>
             <div class="form-group">
               <label for="adopt-email" class="form-label">Email address <span class="required">*</span></label>
@@ -126,12 +126,23 @@
             </div>
             <div class="form-group">
               <label for="adopt-phone" class="form-label">Phone number <span class="required">*</span></label>
-              <input type="tel" id="adopt-phone" name="phone" class="form-control" autocomplete="tel" placeholder="e.g. 082 123 4567" required>
+              <input type="tel" id="adopt-phone" name="phone" class="form-control" autocomplete="tel" placeholder="e.g. 082 123 4567" data-rule="sa-phone" required>
             </div>
             <div class="form-group">
-              <label for="adopt-animal" class="form-label">Animal you are interested in</label>
-              <select id="adopt-animal" name="animal" class="form-control">
-                <option value="">Not sure yet</option>
+              <label for="adopt-enquiry-type" class="form-label">Enquiry type <span class="required">*</span></label>
+              <select id="adopt-enquiry-type" name="enquiry-type" class="form-control" required>
+                <option value="">Please choose</option>
+                <option value="adopt">Adopt an animal</option>
+                <option value="meet">Meet-and-greet visit only</option>
+                <option value="foster">Foster an animal</option>
+                <option value="sponsor">Sponsor an animal (monthly)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="adopt-animal" class="form-label">Animal you are interested in <span class="required">*</span></label>
+              <select id="adopt-animal" name="animal" class="form-control" required>
+                <option value="">Please choose</option>
+                <option value="any">Not sure yet – any animal</option>
                 <option>Max (Dog)</option>
                 <option>Luna (Cat)</option>
                 <option>Biscuit (Dog)</option>
@@ -144,31 +155,36 @@
               </select>
             </div>
             <div class="form-group">
-              <label for="adopt-type" class="form-label">Type of pet <span class="required">*</span></label>
-              <select id="adopt-type" name="pet-type" class="form-control" required>
+              <label for="adopt-home" class="form-label">Type of home <span class="required">*</span></label>
+              <select id="adopt-home" name="home-type" class="form-control" required>
                 <option value="">Please choose</option>
-                <option>Dog</option>
-                <option>Cat</option>
-                <option>Either</option>
+                <option value="garden">House with a garden</option>
+                <option value="house">House without a garden</option>
+                <option value="flat">Flat / apartment</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="adopt-home" class="form-label">Type of home</label>
-              <select id="adopt-home" name="home-type" class="form-control">
-                <option value="">Please choose</option>
-                <option>House with a garden</option>
-                <option>House without a garden</option>
-                <option>Flat / apartment</option>
-              </select>
+              <label for="adopt-date" class="form-label">Preferred visit date <span class="required">*</span></label>
+              <input type="date" id="adopt-date" name="visit-date" class="form-control" data-rule="future-date" required>
+            </div>
+            <div class="form-group">
+              <label for="adopt-people" class="form-label">People in your household <span class="required">*</span></label>
+              <input type="number" id="adopt-people" name="household" class="form-control" min="1" max="12" step="1" placeholder="e.g. 3" inputmode="numeric" required>
             </div>
             <div class="form-group form-group-full">
-              <label for="adopt-message" class="form-label">Tell us about your household and other pets</label>
-              <textarea id="adopt-message" name="message" class="form-control" placeholder="Who lives with you? Do you have other pets? Any experience with dogs or cats?"></textarea>
+              <label for="adopt-message" class="form-label">Tell us about your household and other pets <span class="required">*</span></label>
+              <textarea id="adopt-message" name="message" class="form-control" minlength="20" placeholder="Who lives with you? Do you have other pets? Any experience with dogs or cats?" required></textarea>
+            </div>
+            <div class="form-group form-group-full">
+              <label class="checkbox-item consent-item" for="adopt-consent">
+                <input type="checkbox" id="adopt-consent" name="consent" required>
+                <span>I agree that Tiny Paws may contact me about this enquiry and do a home check. <span class="required">*</span></span>
+              </label>
             </div>
           </div>
-
           <button type="submit" class="btn btn-primary">Send enquiry</button>
           <p class="form-note">We will never share your details with anyone else.</p>
+          <div id="enquiry-result" class="form-result" tabindex="-1" aria-live="polite" hidden></div>
         </form>
       </div>
     </section>
@@ -217,6 +233,8 @@
     </div>
   </footer>
   <script src="js/animals.js" defer></script>
+  <script src="js/validation.js" defer></script>
+  <script src="js/forms.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>
