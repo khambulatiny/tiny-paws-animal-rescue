@@ -1616,3 +1616,27 @@ select.form-control {
 .no-results { grid-column: 1 / -1; text-align: center; padding: var(--space-md); background: var(--color-bg-light); border-radius: var(--radius-md); }
 .no-results-icon { font-size: 2.5rem; margin: 0; }
 .link-btn { background: none; border: 0; padding: 0; font: inherit; color: var(--color-primary-dark); text-decoration: underline; cursor: pointer; }
+
+/* Gallery lightbox */
+.gallery-item { cursor: zoom-in; }
+.gallery-item:focus-visible { outline: 3px solid var(--color-primary-dark); outline-offset: 3px; }
+.gallery-item img { transition: transform var(--transition-base); }
+.gallery-item:hover img { transform: scale(1.05); }
+.lightbox {
+  position: fixed; inset: 0; z-index: 2000; display: flex; align-items: center; justify-content: center;
+  padding: 1rem; background: rgba(10, 25, 35, 0.92);
+}
+.lightbox[hidden] { display: none; }
+.lightbox-figure { margin: 0; max-width: min(900px, 100%); text-align: center; }
+.lightbox-img { max-width: 100%; max-height: 78vh; width: auto; height: auto; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); }
+.lightbox-caption { color: var(--color-white); margin-top: 0.75rem; font-weight: 500; }
+.lightbox-btn {
+  position: absolute; width: 3rem; height: 3rem; border: 0; border-radius: var(--radius-round);
+  background: rgba(255, 255, 255, 0.15); color: var(--color-white); font-size: 2rem; line-height: 1; cursor: pointer;
+}
+.lightbox-btn:hover { background: rgba(255, 255, 255, 0.3); }
+.lightbox-btn:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 2px; }
+.lightbox-close { top: 1rem; right: 1rem; }
+.lightbox-prev { left: 0.5rem; top: 50%; transform: translateY(-50%); }
+.lightbox-next { right: 0.5rem; top: 50%; transform: translateY(-50%); }
+body.lightbox-open { overflow: hidden; }
